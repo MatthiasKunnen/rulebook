@@ -1,0 +1,14 @@
+# System files
+.DS_STORE
+thumbs.db
+
+# IDE - JetBrains
+.idea
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
