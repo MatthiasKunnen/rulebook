@@ -81,7 +81,7 @@
         "no-construct": true,
         "no-debugger": true,
         "no-duplicate-super": true,
-        "no-empty": false,
+        "no-empty": true,
         "no-empty-interface": true,
         "no-eval": true,
         "no-inferrable-types": [
@@ -89,7 +89,6 @@
             "ignore-params"
         ],
         "no-misused-new": true,
-        "no-non-null-assertion": true,
         "no-require-imports": true,
         "no-shadowed-variable": true,
         "no-string-literal": false,
