@@ -8,16 +8,16 @@ rules:
   adjacent-overload-signatures: true
   arrow-return-shorthand: true
   ban:
-    - true
-    -
-      name: "$"
-      message: Please don't
+    options:
+      -
+        name: "$"
+        message: Please don't
   binary-expression-operand-order: true
   callable-types: true
   class-name: true
   comment-format:
-    - true
-    - check-space
+    options:
+      - check-space
   curly: true
   deprecation:
     severity: warn
@@ -25,38 +25,38 @@ rules:
   forin: true
   import-spacing: true
   indent:
-    - true
-    - spaces
-    - 4
+    options:
+      - spaces
+      - 4
   interface-name:
-    - true
-    - never-prefix
+    options:
+      - never-prefix
   interface-over-type-literal: true
   jsdoc-format: true
   label-position: true
   max-line-length:
-    - true
-    - 100
+    options:
+      - 100
   member-access: false
   member-ordering:
-    - true
-    -
-      order:
-        - public-static-field
-        - protected-static-field
-        - private-static-field
-        - public-instance-field
-        - protected-instance-field
-        - private-instance-field
-        - public-constructor
-        - protected-constructor
-        - private-constructor
-        - public-static-method
-        - protected-static-method
-        - private-static-method
-        - public-instance-method
-        - protected-instance-method
-        - private-instance-method
+    options:
+      -
+        order:
+          - public-static-field
+          - protected-static-field
+          - private-static-field
+          - public-instance-field
+          - protected-instance-field
+          - private-instance-field
+          - public-constructor
+          - protected-constructor
+          - private-constructor
+          - public-static-method
+          - protected-static-method
+          - private-static-method
+          - public-instance-method
+          - protected-instance-method
+          - private-instance-method
   no-arg: true
   no-bitwise: true
   no-boolean-literal-compare: true
@@ -68,8 +68,8 @@ rules:
     - timeEnd
     - trace
   no-consecutive-blank-lines:
-    - true
-    - 1
+    options:
+      - 1
   no-construct: true
   no-debugger: true
   no-duplicate-super: true
@@ -77,8 +77,8 @@ rules:
   no-empty-interface: true
   no-eval: true
   no-inferrable-types:
-    - true
-    - ignore-params
+    options:
+      - ignore-params
   no-misused-new: true
   no-require-imports: true
   no-shadowed-variable: true
@@ -94,75 +94,75 @@ rules:
   object-literal-sort-keys: false
   ordered-imports: true
   one-line:
-    - true
-    - check-open-brace
-    - check-catch
-    - check-else
-    - check-whitespace
+    options:
+      - check-open-brace
+      - check-catch
+      - check-else
+      - check-whitespace
   only-arrow-functions:
-    - true
-    - allow-declarations
-    - allow-named-functions
+    options:
+      - allow-declarations
+      - allow-named-functions
   prefer-const: true
   prefer-object-spread: true
   prefer-switch: true
   prefer-template:
-    - true
-    - allow-single-concat
+    options:
+      - allow-single-concat
   quotemark:
-    - true
-    - single
+    options:
+      - single
   radix: true
   semicolon:
-    - true
-    - always
+    options:
+      - always
   trailing-comma:
-    - true
-    -
-      esSpecCompliant: true
-      multiline: always
-      singleline: never
+    options:
+      -
+        esSpecCompliant: true
+        multiline: always
+        singleline: never
   triple-equals:
-    - true
-    - allow-null-check
+    options:
+      - allow-null-check
   typedef-whitespace:
-    - true
-    -
-      call-signature: nospace
-      index-signature: nospace
-      parameter: nospace
-      property-declaration: nospace
-      variable-declaration: nospace
+    options:
+      -
+        call-signature: nospace
+        index-signature: nospace
+        parameter: nospace
+        property-declaration: nospace
+        variable-declaration: nospace
   unified-signatures: true
   variable-name: false
   whitespace:
-    - true
-    - check-branch
-    - check-decl
-    - check-module
-    - check-operator
-    - check-rest-spread
-    - check-separator
-    - check-type
+    options:
+      - check-branch
+      - check-decl
+      - check-module
+      - check-operator
+      - check-rest-spread
+      - check-separator
+      - check-type
 
   # Codelyzer
   angular-whitespace:
-    - true
-    - check-interpolation
-    - check-semicolon
+    options:
+      - check-interpolation
+      - check-semicolon
   banana-in-box: true
   component-class-suffix: true
   component-selector:
-    - true
-    - element
-    - app
-    - kebab-case
+    options:
+      - element
+      - app
+      - kebab-case
   directive-class-suffix: true
   directive-selector:
-    - true
-    - attribute
-    - app
-    - camelCase
+    options:
+      - attribute
+      - app
+      - camelCase
   no-input-rename: true
   no-life-cycle-call: true
   no-output-on-prefix: true
