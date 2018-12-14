@@ -153,6 +153,7 @@
             "check-decl",
             "check-module",
             "check-operator",
+            "check-rest-spread",
             "check-separator",
             "check-type"
         ],
