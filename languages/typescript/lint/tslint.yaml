@@ -1,9 +1,24 @@
 ---
-# tslint@5.7.x
+# tslint@5.11.x
+
+linterOptions:
+  exclude:
+    - node_modules/**
 
 rules:
   adjacent-overload-signatures: true
+  align:
+    options:
+      - elements
+      - members
+      - parameters
+      - statements
+  array-type:
+    options:
+      - generic
+  await-promise: true
   arrow-return-shorthand: true
+  ban-comma-operator: true
   binary-expression-operand-order: true
   callable-types: true
   class-name: true
@@ -15,6 +30,9 @@ rules:
     severity: warn
   eofline: true
   forin: true
+  file-name-casing:
+    options:
+      - kebab-case
   import-spacing: true
   indent:
     options:
@@ -29,7 +47,9 @@ rules:
   max-line-length:
     options:
       - 100
-  member-access: false
+  member-access:
+    options:
+      - no-public
   member-ordering:
     options:
       -
@@ -52,6 +72,7 @@ rules:
   no-arg: true
   no-bitwise: true
   no-boolean-literal-compare: true
+  no-conditional-assignment: true
   no-console: true
   no-consecutive-blank-lines:
     options:
@@ -59,24 +80,38 @@ rules:
   no-construct: true
   no-debugger: true
   no-duplicate-super: true
+  no-duplicate-switch-case: true
   no-empty: true
   no-empty-interface: true
   no-eval: true
+  no-floating-promises: true
+  no-for-in-array: true
+  no-implicit-dependencies: true
   no-inferrable-types:
     options:
       - ignore-params
+  no-internal-module: true
+  no-invalid-this: true
   no-misused-new: true
+  no-namespace: true
+  no-non-null-assertion: false
   no-require-imports: true
+  no-return-await: true
   no-shadowed-variable: true
   no-string-literal: false
   no-string-throw: true
   no-switch-case-fall-through: true
+  no-this-assignment:
+    options:
+      allow-destructuring: true
   no-trailing-whitespace: true
   no-unnecessary-callback-wrapper: true
   no-unnecessary-initializer: true
+  no-unnecessary-type-assertion: true
   no-unused-expression: true
   no-use-before-declare: true
   no-var-keyword: true
+  no-var-requires: true
   object-literal-sort-keys: false
   ordered-imports: true
   one-line:
@@ -85,19 +120,35 @@ rules:
       - check-catch
       - check-else
       - check-whitespace
+  one-variable-per-declaration:
+    options:
+      - ignore-for-loop
   prefer-const: true
+  prefer-for-of: true
+  prefer-method-signature: true
   prefer-object-spread: true
   prefer-switch: true
+  prefer-readonly:
+    severity: warn
   prefer-template:
     options:
       - allow-single-concat
+  prefer-while: true
+  promise-function-async: true
   quotemark:
     options:
       - single
   radix: true
+  restrict-plus-operands: true
+  strict-boolean-expressions: true
+  strict-type-predicates: true
   semicolon:
     options:
       - always
+  space-before-function-paren: false
+  space-within-parens:
+    options:
+      - 0
   trailing-comma:
     options:
       -
@@ -116,7 +167,11 @@ rules:
         property-declaration: nospace
         variable-declaration: nospace
   unified-signatures: true
-  variable-name: false
+  variable-name:
+    options:
+      - check-format
+      - allow-pascal-case
+      - allow-leading-underscore
   whitespace:
     options:
       - check-branch
