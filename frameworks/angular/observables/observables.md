@@ -22,17 +22,20 @@ track of the components state. Example:
 
 ```TypeScript
 export class Component implements OnDestroy, OnInit {
-    private alive = new ReplaySubject<void>(1);
+    private alive: ReplaySubject<void>;
 
-    constructor(private authService: AuthService) {
+    constructor(
+        private readonly authService: AuthService,
+    ) {
     }
 
     ngOnDestroy(): void {
-        this.alive.next(undefined);
+        this.alive.next();
         this.alive.complete();
     }
 
     ngOnInit(): void {
+        this.alive = new ReplaySubject<void>(1);
         this.authService.getUser().pipe(
             takeUntil(this.alive),
         ).subscribe(console.log);
