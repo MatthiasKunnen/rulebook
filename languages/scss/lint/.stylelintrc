@@ -348,7 +348,14 @@
             "stroke"
         ],
         "property-case": "lower",
-        "property-no-vendor-prefix": true,
+        "property-no-vendor-prefix": [
+            true,
+            {
+                "ignoreProperties": [
+                    "appearance"
+                ]
+            }
+        ],
         "rule-empty-line-before": [
             "always-multi-line",
             {
