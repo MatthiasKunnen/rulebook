@@ -4,6 +4,6 @@ CSS code, [StyleLint](https://www.npmjs.com/package/stylelint) is used. The conf
 found in `.stylelintrc.yaml`.
 
 Add the following script to your package.json:
-`"lint:css": "stylelint "src/**/*.scss" --syntax scss"`.
+`"lint:css": "stylelint \"src/**/*.scss\" --syntax scss"`.
 
 The glob pattern can be changed to match the correct path.
