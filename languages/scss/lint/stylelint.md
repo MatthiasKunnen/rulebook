@@ -5,5 +5,6 @@ found in `.stylelintrc.yaml`.
 
 Add the following script to your package.json:
 `"lint:css": "stylelint \"src/**/*.scss\" --syntax scss"`.
+To run the linter execute `npm run lint:css`. For automatic fixing, run `npm run lint:css -- --fix`.
 
 The glob pattern can be changed to match the correct path.
