@@ -17,12 +17,12 @@ and destroyed multiple times when the user is navigating or other actions occur.
 When destruction occurs you should unsubscribe from subscription you no longer
 need.
 
-The preferred usage is creating a class level replaySubject which will keep
+The preferred usage is creating a class level ReplaySubject which will keep
 track of the components state. Example:
 
 ```TypeScript
 export class Component implements OnDestroy, OnInit {
-    private alive: ReplaySubject<void>;
+    private readonly destroyed = new ReplaySubject<void>();
 
     constructor(
         private readonly authService: AuthService,
@@ -30,18 +30,17 @@ export class Component implements OnDestroy, OnInit {
     }
 
     ngOnDestroy(): void {
-        this.alive.next();
-        this.alive.complete();
+        this.destroyed.next();
+        this.destroyed.complete();
     }
 
     ngOnInit(): void {
-        this.alive = new ReplaySubject<void>(1);
         this.authService.getUser().pipe(
-            takeUntil(this.alive),
+            takeUntil(this.destroyed),
         ).subscribe(console.log);
     }
 }
 ```
 
-When the component is destroyed, the alive observable will emit which will make
+When the component is destroyed, the destroyed observable will emit which will make
 the `takeUntil` operator complete the subscription.
