@@ -9,6 +9,7 @@ rules:
       ignore:
         - after-comment
       ignoreAtRules:
+        - import
         - include
   at-rule-name-case: lower
   at-rule-name-newline-after: always-multi-line
