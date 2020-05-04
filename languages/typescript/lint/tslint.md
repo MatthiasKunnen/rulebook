@@ -8,5 +8,5 @@ There is a difference between the two since Angular projects have extra rules fo
 et cetera.
 
 Add the following script to your package.json: `"lint:ts": "tslint -p tsconfig.json"`.
-To run the linter execute `npm run lint:ts` and to do automatic fixing, run
-`npm run lint:ts -- --fix`.
+To run the linter execute `yarn run lint:ts` and to do automatic fixing, run
+`yarn run lint:ts --fix`.
