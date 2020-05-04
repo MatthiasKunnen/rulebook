@@ -329,6 +329,7 @@ rules:
   shorthand-property-no-redundant-values: true
   string-no-newline: true
   string-quotes: single
+  unicode-bom: never
   unit-case: lower
   value-keyword-case: lower
   value-list-comma-newline-after: always-multi-line
