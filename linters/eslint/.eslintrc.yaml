@@ -1,0 +1,16 @@
+---
+
+extends:
+  - ./base/index.js
+
+env:
+  node: true
+
+rules:
+  max-len: off
+  quote-props:
+    - error
+    - consistent-as-needed
+  sort-keys:
+    - error
+    - asc
