@@ -2,6 +2,11 @@
 .DS_STORE
 thumbs.db
 
+# Compiled output
+/dist
+/tmp
+/out-tsc
+
 # IDE - JetBrains
 .idea
 
@@ -12,3 +17,25 @@ thumbs.db
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# Tools
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+
+# Yarn
+node_modules
+yarn-error.log
+# https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+
+# Local files
+/local
+*.local.*
+*.min.*
