@@ -3,13 +3,11 @@
     "version": "1.0.0",
     "description": "A collection of configs and information that I regularly use",
     "scripts": {
-        "lint:linters": "yarn run lint:linters:base \"linters/eslint/**/*.js\"",
+        "lint:linters": "yarn run lint:linters:base linters/eslint/*/*.js",
         "lint:linters:base": "eslint -c linters/eslint/.eslintrc.yaml"
     },
     "devDependencies": {
-        "eslint": "^6.8.0",
-        "eslint-plugin-import": "^2.20.2",
-        "eslint-plugin-unicorn": "^19.0.1",
+        "@matthiaskunnen/eslint-config-base": "^1.0.0",
         "husky": "^4.2.5",
         "lint-staged": "^10.2.2"
     },
