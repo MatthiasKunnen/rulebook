@@ -193,7 +193,27 @@ module.exports = {
         ],
         'object-curly-spacing': ['error', 'never'],
         'one-var': ['error', 'never'],
-        'operator-linebreak': ['error', 'before'],
+        'operator-linebreak': [
+            'error',
+            'before',
+            {
+                overrides: {
+                    '%=': 'after',
+                    '&=': 'after',
+                    '**=': 'after',
+                    '*=': 'after',
+                    '+=': 'after',
+                    '-=': 'after',
+                    '/=': 'after',
+                    '<<=': 'after',
+                    '=': 'after',
+                    '>>=': 'after',
+                    '>>>=': 'after',
+                    '^=': 'after',
+                    '|=': 'after',
+                },
+            },
+        ],
         'padded-blocks': [
             'error',
             {
