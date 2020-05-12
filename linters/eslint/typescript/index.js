@@ -43,6 +43,12 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': 'error',
         '@typescript-eslint/brace-style': ['error', '1tbs'],
         '@typescript-eslint/class-name-casing': 'error',
+        '@typescript-eslint/consistent-type-assertions': [
+            'error',
+            {
+                assertionStyle: 'as',
+            },
+        ],
         '@typescript-eslint/consistent-type-definitions': 'error',
         '@typescript-eslint/explicit-member-accessibility': [
             'error',
