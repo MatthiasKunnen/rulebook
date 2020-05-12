@@ -116,6 +116,13 @@ module.exports = {
         '@typescript-eslint/no-empty-function': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/no-extra-non-null-assertion': 'off',
+        '@typescript-eslint/no-extra-parens': [
+            'error',
+            'all',
+            {
+                nestedBinaryExpressions: false,
+            },
+        ],
         '@typescript-eslint/no-floating-promises': 'error',
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-inferrable-types': 'error',
@@ -150,6 +157,7 @@ module.exports = {
         'brace-style': 'off', // Would fight with TS rule
         'indent': 'off', // Would fight with TS rule
         'keyword-spacing': 'off', // Would fight with TS rule
+        'no-extra-parens': 'off', // Would fight with TS rule
         'no-unused-vars': 'off', // Use tsconfig's noUnusedLocals
         'no-useless-constructor': 'off', // Would fight with TS rule
         'require-await': 'off', // Fights with @typescript-eslint/promise-function-async

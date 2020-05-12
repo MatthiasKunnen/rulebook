@@ -109,6 +109,13 @@ module.exports = {
         'no-ex-assign': 'error',
         'no-extend-native': 'error',
         'no-extra-boolean-cast': 'error',
+        'no-extra-parens': [
+            'error',
+            'all',
+            {
+                nestedBinaryExpressions: false,
+            },
+        ],
         'no-fallthrough': 'error',
         'no-floating-decimal': 'error',
         'no-func-assign': 'error',
