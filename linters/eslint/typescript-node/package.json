@@ -2,6 +2,10 @@
     "name": "@matthiaskunnen/eslint-config-typescript-node",
     "version": "1.0.0",
     "description": "Eslint config for Node + TypeScript projects",
+    "keywords": [
+        "eslint",
+        "eslintconfig"
+    ],
     "author": "Matthias Kunnen <matthias.kunnen@gmail.com>",
     "main": "index.js",
     "homepage": "https://github.com/MatthiasKunnen/rulebook/linters/eslint/typescript-node#readme",
