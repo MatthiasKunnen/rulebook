@@ -94,7 +94,6 @@ module.exports = {
         'no-case-declarations': 'error',
         'no-class-assign': 'error',
         'no-cond-assign': 'error',
-        'no-confusing-arrow': 'error',
         'no-debugger': 'error',
         'no-dupe-args': 'error',
         'no-dupe-class-members': 'error',
