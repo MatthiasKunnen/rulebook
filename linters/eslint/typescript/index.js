@@ -165,6 +165,7 @@ module.exports = {
         'keyword-spacing': 'off', // Would fight with TS rule
         'no-extra-parens': 'off', // Would fight with TS rule
         'no-unused-vars': 'off', // Use tsconfig's noUnusedLocals
+        'no-use-before-define': 'off', // Would fight with TS rule
         'no-useless-constructor': 'off', // Would fight with TS rule
         'require-await': 'off', // Fights with @typescript-eslint/promise-function-async
     },
