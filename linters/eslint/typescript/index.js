@@ -164,6 +164,7 @@ module.exports = {
         'indent': 'off', // Would fight with TS rule
         'keyword-spacing': 'off', // Would fight with TS rule
         'no-extra-parens': 'off', // Would fight with TS rule
+        'no-invalid-this': 'off', // Reconsider when https://github.com/typescript-eslint/typescript-eslint/issues/491 is fixed
         'no-unused-vars': 'off', // Use tsconfig's noUnusedLocals
         'no-use-before-define': 'off', // Would fight with TS rule
         'no-useless-constructor': 'off', // Would fight with TS rule
