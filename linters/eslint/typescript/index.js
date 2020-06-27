@@ -163,6 +163,7 @@ module.exports = {
         'brace-style': 'off', // Would fight with TS rule
         'indent': 'off', // Would fight with TS rule
         'keyword-spacing': 'off', // Would fight with TS rule
+        'no-dupe-class-members': 'off', // The rule errors on method overloads and TypeScript already disallows dupes
         'no-extra-parens': 'off', // Would fight with TS rule
         'no-invalid-this': 'off', // Reconsider when https://github.com/typescript-eslint/typescript-eslint/issues/491 is fixed
         'no-unused-vars': 'off', // Use tsconfig's noUnusedLocals
