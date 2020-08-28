@@ -57,6 +57,7 @@ module.exports = {
             },
         ],
         //  Off Until indent for type and decorator are fixed
+        // See https://github.com/typescript-eslint/typescript-eslint/issues/1824
         // '@typescript-eslint/indent': [
         //     'error',
         //     4,
