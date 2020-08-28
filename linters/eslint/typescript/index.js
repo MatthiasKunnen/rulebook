@@ -136,7 +136,16 @@ module.exports = {
         '@typescript-eslint/no-this-alias': 'error',
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
-        '@typescript-eslint/no-use-before-define': 'error',
+        '@typescript-eslint/no-use-before-define': [
+            'error',
+            {
+                classes: true,
+                enums: true,
+                functions: false,
+                typedefs: true,
+                variables: true,
+            },
+        ],
         '@typescript-eslint/no-useless-constructor': 'error',
         '@typescript-eslint/prefer-for-of': 'error',
         '@typescript-eslint/prefer-function-type': 'error',
