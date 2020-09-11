@@ -42,7 +42,6 @@ module.exports = {
         '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/ban-ts-comment': 'error',
         '@typescript-eslint/brace-style': ['error', '1tbs'],
-        '@typescript-eslint/class-name-casing': 'error',
         '@typescript-eslint/consistent-type-assertions': [
             'error',
             {
@@ -120,6 +119,14 @@ module.exports = {
             },
         ],
         '@typescript-eslint/method-signature-style': ['error', 'property'],
+        '@typescript-eslint/naming-convention': [
+            'error',
+            {format: ['camelCase'], selector: 'default'},
+            {format: ['PascalCase'], selector: 'typeLike'},
+            {format: ['PascalCase'], selector: 'enumMember'},
+            {format: ['camelCase', 'PascalCase', 'UPPER_CASE'], leadingUnderscore: 'allow', selector: 'property'},
+            {format: ['camelCase', 'UPPER_CASE'], selector: 'variable'},
+        ],
         '@typescript-eslint/no-empty-function': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/no-extra-non-null-assertion': 'off',
@@ -148,6 +155,7 @@ module.exports = {
             },
         ],
         '@typescript-eslint/no-useless-constructor': 'error',
+        '@typescript-eslint/prefer-enum-initializers': 'error',
         '@typescript-eslint/prefer-for-of': 'error',
         '@typescript-eslint/prefer-function-type': 'error',
         '@typescript-eslint/prefer-namespace-keyword': 'error',
@@ -172,6 +180,7 @@ module.exports = {
         'brace-style': 'off', // Would fight with TS rule
         'indent': 'off', // Would fight with TS rule
         'keyword-spacing': 'off', // Would fight with TS rule
+        'no-confusing-arrow': 'off', // With types this should be clear enough
         'no-dupe-class-members': 'off', // The rule errors on method overloads and TypeScript already disallows dupes
         'no-extra-parens': 'off', // Would fight with TS rule
         'no-invalid-this': 'off', // Reconsider when https://github.com/typescript-eslint/typescript-eslint/issues/491 is fixed
