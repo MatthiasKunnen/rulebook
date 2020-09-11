@@ -141,6 +141,7 @@ module.exports = {
         '@typescript-eslint/no-for-in-array': 'error',
         '@typescript-eslint/no-misused-new': 'error',
         '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/no-redeclare': 'error',
         '@typescript-eslint/no-shadow': 'error',
         '@typescript-eslint/no-this-alias': 'error',
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
@@ -185,6 +186,7 @@ module.exports = {
         'no-dupe-class-members': 'off', // The rule errors on method overloads and TypeScript already disallows dupes
         'no-extra-parens': 'off', // Would fight with TS rule
         'no-invalid-this': 'off', // Reconsider when https://github.com/typescript-eslint/typescript-eslint/issues/491 is fixed
+        'no-redeclare': 'off', // Would fight with TS rule
         'no-shadow': 'off', // Would fight with TS rule
         'no-unused-vars': 'off', // Use tsconfig's noUnusedLocals
         'no-use-before-define': 'off', // Would fight with TS rule
