@@ -17,9 +17,9 @@
     "private": false,
     "dependencies": {
         "@matthiaskunnen/eslint-config-base": "^1.1.0",
-        "@typescript-eslint/eslint-plugin": ">=2.31.0 <5",
-        "@typescript-eslint/eslint-plugin-tslint": ">=2.31.0 <5",
-        "@typescript-eslint/parser": ">=2.31.0 <5",
+        "@typescript-eslint/eslint-plugin": "^2.31.0",
+        "@typescript-eslint/eslint-plugin-tslint": "^2.31.0",
+        "@typescript-eslint/parser": "^2.31.0",
         "tslint": "^6.1.2"
     },
     "files": [
