@@ -16,7 +16,7 @@
     "license": "LGPL-3.0",
     "private": false,
     "dependencies": {
-        "@matthiaskunnen/eslint-config-typescript": "^1.0.1",
+        "@matthiaskunnen/eslint-config-typescript": "^2.0.0",
         "codelyzer": "^5.2.2"
     },
     "files": [
