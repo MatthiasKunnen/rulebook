@@ -171,7 +171,18 @@ module.exports = {
             },
         ],
         '@typescript-eslint/restrict-plus-operands': 'off',
-        '@typescript-eslint/strict-boolean-expressions': 'error',
+        '@typescript-eslint/strict-boolean-expressions': [
+            'error',
+            {
+                allowAny: false,
+                allowNullableBoolean: false,
+                allowNullableNumber: false,
+                allowNullableObject: false,
+                allowNullableString: false,
+                allowNumber: false,
+                allowString: false,
+            },
+        ],
         '@typescript-eslint/tslint/config': [
             'error',
             {
