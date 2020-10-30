@@ -56,6 +56,17 @@ module.exports = {
             },
         ],
         'no-alert': 'error',
+        'no-restricted-imports': [
+            'error',
+            {
+                paths: [
+                    {
+                        message: 'Use @apollo/client/core instead to avoid react dependency.',
+                        name: '@apollo/client',
+                    },
+                ],
+            },
+        ],
         'strict': 'error',
     },
 };
