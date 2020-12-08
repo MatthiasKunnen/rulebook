@@ -42,6 +42,7 @@ module.exports = {
         '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/ban-ts-comment': 'error',
         '@typescript-eslint/brace-style': ['error', '1tbs'],
+        '@typescript-eslint/comma-spacing': 'error',
         '@typescript-eslint/consistent-type-assertions': [
             'error',
             {
@@ -55,6 +56,7 @@ module.exports = {
                 accessibility: 'no-public',
             },
         ],
+        '@typescript-eslint/func-call-spacing': ['error', 'never'],
         //  Off Until indent for type and decorator are fixed
         // See https://github.com/typescript-eslint/typescript-eslint/issues/1824
         // '@typescript-eslint/indent': [
@@ -147,8 +149,10 @@ module.exports = {
         '@typescript-eslint/no-redeclare': 'error',
         '@typescript-eslint/no-shadow': 'error',
         '@typescript-eslint/no-this-alias': 'error',
+        '@typescript-eslint/no-throw-literal': 'error',
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+        '@typescript-eslint/no-unused-expressions': 'error',
         '@typescript-eslint/no-use-before-define': [
             'error',
             {
@@ -173,6 +177,15 @@ module.exports = {
             },
         ],
         '@typescript-eslint/restrict-plus-operands': 'off',
+        '@typescript-eslint/semi': ['error', 'always'],
+        '@typescript-eslint/space-before-function-paren': [
+            'error',
+            {
+                anonymous: 'always',
+                asyncArrow: 'always',
+                named: 'never',
+            },
+        ],
         '@typescript-eslint/strict-boolean-expressions': [
             'error',
             {
@@ -194,6 +207,8 @@ module.exports = {
         '@typescript-eslint/type-annotation-spacing': 'error',
         '@typescript-eslint/unified-signatures': 'error',
         'brace-style': 'off', // Would fight with TS rule
+        'comma-spacing': 'off', // Would fight with TS rule
+        'func-call-spacing': 'off', // Would fight with TS rule
         'indent': 'off', // Would fight with TS rule
         'keyword-spacing': 'off', // Would fight with TS rule
         'no-confusing-arrow': 'off', // With types this should be clear enough
@@ -202,9 +217,14 @@ module.exports = {
         'no-invalid-this': 'off', // Reconsider when https://github.com/typescript-eslint/typescript-eslint/issues/491 is fixed
         'no-redeclare': 'off', // Would fight with TS rule
         'no-shadow': 'off', // Would fight with TS rule
+        'no-throw-literal': 'off', // Would fight with TS rule
+        'no-unused-expressions': 'off', // Would fight with TS rule
         'no-unused-vars': 'off', // Use tsconfig's noUnusedLocals
         'no-use-before-define': 'off', // Would fight with TS rule
         'no-useless-constructor': 'off', // Would fight with TS rule
+        'quotes': 'off', // Would fight with TS rule
         'require-await': 'off', // Fights with @typescript-eslint/promise-function-async
+        'semi': 'off', // Would fight with TS rule
+        'space-before-function-paren': 'off', // Would fight with TS rule
     },
 };
