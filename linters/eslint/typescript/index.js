@@ -42,6 +42,7 @@ module.exports = {
         '@typescript-eslint/await-thenable': 'error',
         '@typescript-eslint/ban-ts-comment': 'error',
         '@typescript-eslint/brace-style': ['error', '1tbs'],
+        '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
         '@typescript-eslint/comma-spacing': 'error',
         '@typescript-eslint/consistent-type-assertions': [
             'error',
@@ -128,10 +129,14 @@ module.exports = {
             {format: ['PascalCase'], selector: 'enumMember'},
             {format: ['camelCase'], leadingUnderscore: 'allow', selector: 'method'},
             {format: ['camelCase'], leadingUnderscore: 'allow', selector: 'parameter'},
-            {format: null, selector: 'property'},
             {format: ['camelCase', 'PascalCase'], leadingUnderscore: 'allow', selector: 'variable'},
             {format: ['camelCase', 'PascalCase', 'UPPER_CASE'], modifiers: ['const'], selector: 'variable'},
+            {format: null, selector: 'classProperty'},
+            {format: null, selector: 'objectLiteralProperty'},
+            {format: null, selector: 'typeProperty'},
         ],
+        '@typescript-eslint/no-confusing-void-expression': 'error',
+        // '@typescript-eslint/no-duplicate-imports': 'error', Waiting on https://github.com/eslint/eslint/issues/12758
         '@typescript-eslint/no-empty-function': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
         '@typescript-eslint/no-extra-non-null-assertion': 'off',
@@ -186,6 +191,7 @@ module.exports = {
                 named: 'never',
             },
         ],
+        '@typescript-eslint/space-infix-ops': 'error',
         '@typescript-eslint/strict-boolean-expressions': [
             'error',
             {
@@ -205,14 +211,22 @@ module.exports = {
             },
         ],
         '@typescript-eslint/type-annotation-spacing': 'error',
+        '@typescript-eslint/unbound-method': [
+            'error',
+            {
+                ignoreStatic: true,
+            },
+        ],
         '@typescript-eslint/unified-signatures': 'error',
         'brace-style': 'off', // Would fight with TS rule
+        'comma-dangle': 'off', // Would fight with TS rule
         'comma-spacing': 'off', // Would fight with TS rule
         'func-call-spacing': 'off', // Would fight with TS rule
         'indent': 'off', // Would fight with TS rule
         'keyword-spacing': 'off', // Would fight with TS rule
         'no-confusing-arrow': 'off', // With types this should be clear enough
         'no-dupe-class-members': 'off', // The rule errors on method overloads and TypeScript already disallows dupes
+        'no-duplicate-imports': 'off', // Would fight with TS rule
         'no-extra-parens': 'off', // Would fight with TS rule
         'no-invalid-this': 'off', // Reconsider when https://github.com/typescript-eslint/typescript-eslint/issues/491 is fixed
         'no-redeclare': 'off', // Would fight with TS rule
@@ -226,5 +240,6 @@ module.exports = {
         'require-await': 'off', // Fights with @typescript-eslint/promise-function-async
         'semi': 'off', // Would fight with TS rule
         'space-before-function-paren': 'off', // Would fight with TS rule
+        'space-infix-ops': 'off', // Would fight with TS rule
     },
 };
