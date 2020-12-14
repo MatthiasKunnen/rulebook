@@ -8,7 +8,7 @@
     ],
     "author": "Matthias Kunnen <matthias.kunnen@gmail.com>",
     "main": "index.js",
-    "homepage": "https://github.com/MatthiasKunnen/rulebook/linters/eslint/base#readme",
+    "homepage": "https://github.com/MatthiasKunnen/rulebook/tree/master/linters/eslint/base#readme",
     "repository": {
         "type": "git",
         "url": "github:MatthiasKunnen/rulebook"
