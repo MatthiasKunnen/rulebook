@@ -169,6 +169,7 @@ module.exports = {
             },
         ],
         '@typescript-eslint/no-useless-constructor': 'error',
+        '@typescript-eslint/non-nullable-type-assertion-style': 'error',
         '@typescript-eslint/object-curly-spacing': ['error', 'never'],
         '@typescript-eslint/prefer-enum-initializers': 'error',
         '@typescript-eslint/prefer-for-of': 'error',
