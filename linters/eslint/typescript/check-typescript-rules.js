@@ -19,7 +19,7 @@ const typeScriptRules = new Set(fs.readdirSync(typeScriptRulesPath)
 
 const output = {
     baseNotTurnedOff: [],
-    unused: [],
+    tsSpecificRuleUnused: [],
     unusedButBaseTurnedOff: [],
 };
 
@@ -33,7 +33,7 @@ Object.keys(baseConfig.rules).forEach(rule => {
         } else if (isTurnedOff && !isUsed) {
             output.unusedButBaseTurnedOff.push(rule);
         } else if (!isUsed) {
-            output.unused.push(rule);
+            output.tsSpecificRuleUnused.push(rule);
         }
     }
 });
@@ -44,7 +44,7 @@ const ignoredTsRuleUnused = new Set([
     'no-array-constructor', // The TS specific rule allows new Array with generics
 ]);
 
-if (output.unused.filter(rule => !ignoredTsRuleUnused.has(rule)).length > 0
+if (output.tsSpecificRuleUnused.filter(rule => !ignoredTsRuleUnused.has(rule)).length > 0
     || output.baseNotTurnedOff.length > 0) {
     process.exit(1);
 }
