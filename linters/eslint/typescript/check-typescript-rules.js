@@ -39,3 +39,7 @@ Object.keys(baseConfig.rules).forEach(rule => {
 });
 
 console.log(JSON.stringify(output, undefined, 4));
+
+if (output.unused.length > 0 || output.baseNotTurnedOff.length > 0) {
+    process.exit(1);
+}
