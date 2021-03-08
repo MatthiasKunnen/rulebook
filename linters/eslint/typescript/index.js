@@ -169,6 +169,7 @@ module.exports = {
             },
         ],
         '@typescript-eslint/no-useless-constructor': 'error',
+        '@typescript-eslint/object-curly-spacing': ['error', 'never'],
         '@typescript-eslint/prefer-enum-initializers': 'error',
         '@typescript-eslint/prefer-for-of': 'error',
         '@typescript-eslint/prefer-function-type': 'error',
@@ -236,6 +237,7 @@ module.exports = {
         'no-unused-vars': 'off', // Use tsconfig's noUnusedLocals
         'no-use-before-define': 'off', // Would fight with TS rule
         'no-useless-constructor': 'off', // Would fight with TS rule
+        'object-curly-spacing': 'off', // Would fight with TS rule
         'quotes': 'off', // Would fight with TS rule
         'require-await': 'off', // Fights with @typescript-eslint/promise-function-async
         'semi': 'off', // Would fight with TS rule
