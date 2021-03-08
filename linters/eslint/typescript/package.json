@@ -15,6 +15,9 @@
     },
     "license": "LGPL-3.0",
     "private": false,
+    "scripts": {
+        "test": "node check-typescript-rules.js"
+    },
     "dependencies": {
         "@matthiaskunnen/eslint-config-base": "^1.1.0",
         "@typescript-eslint/eslint-plugin": "~4.9.1",
