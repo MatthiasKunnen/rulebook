@@ -19,7 +19,7 @@
     },
     "author": "Matthias Kunnen <matthias.kunnen@gmail.com>",
     "license": "GPL-3.0",
-    "private": false,
+    "private": true,
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
