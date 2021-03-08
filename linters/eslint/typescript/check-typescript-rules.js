@@ -40,6 +40,11 @@ Object.keys(baseConfig.rules).forEach(rule => {
 
 console.log(JSON.stringify(output, undefined, 4));
 
-if (output.unused.length > 0 || output.baseNotTurnedOff.length > 0) {
+const ignoredTsRuleUnused = new Set([
+    'no-array-constructor', // The TS specific rule allows new Array with generics
+]);
+
+if (output.unused.filter(rule => !ignoredTsRuleUnused.has(rule)).length > 0
+    || output.baseNotTurnedOff.length > 0) {
     process.exit(1);
 }
