@@ -1,40 +1,3 @@
-const tslintBase = {
-    'align': [
-        true,
-        'elements',
-        'members',
-        'parameters',
-        'statements',
-    ],
-    'jsdoc-format': true,
-    'prefer-while': true,
-    'strict-type-predicates': true,
-    'whitespace': [
-        true,
-        'check-type-operator',
-    ],
-};
-
-const codelyzerRules = {
-    'component-class-suffix': true,
-    'component-selector': [true, 'element', 'app', 'kebab-case'],
-    'contextual-lifecycle': true,
-    'directive-class-suffix': true,
-    'directive-selector': [true, 'attribute', 'app', 'camelCase'],
-    'no-conflicting-lifecycle': true,
-    'no-host-metadata-property': true,
-    'no-input-rename': true,
-    'no-inputs-metadata-property': true,
-    'no-output-native': true,
-    'no-output-on-prefix': true,
-    'no-output-rename': true,
-    'no-outputs-metadata-property': true,
-    'template-banana-in-box': true,
-    'template-no-negated-async': true,
-    'use-lifecycle-interface': true,
-    'use-pipe-transform-interface': true,
-};
-
 module.exports = {
     env: {
         es6: true,
@@ -42,19 +5,42 @@ module.exports = {
     extends: [
         '@matthiaskunnen/eslint-config-typescript',
     ],
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaVersion: 2020,
+        sourceType: 'module',
+    },
+    plugins: ['@typescript-eslint', '@angular-eslint'],
     rules: {
-        '@typescript-eslint/tslint/config': [
+        '@angular-eslint/component-class-suffix': 'error',
+        '@angular-eslint/component-selector': [
             'error',
             {
-                rules: {
-                    ...tslintBase,
-                    ...codelyzerRules,
-                },
-                rulesDirectory: [
-                    'codelyzer',
-                ],
+                prefix: 'app',
+                style: 'kebab-case',
+                type: 'element',
             },
         ],
+        '@angular-eslint/contextual-lifecycle': 'error',
+        '@angular-eslint/directive-class-suffix': 'error',
+        '@angular-eslint/directive-selector': [
+            'error',
+            {
+                prefix: 'app',
+                style: 'camelCase',
+                type: 'attribute',
+            },
+        ],
+        '@angular-eslint/no-conflicting-lifecycle': 'error',
+        '@angular-eslint/no-host-metadata-property': 'error',
+        '@angular-eslint/no-input-rename': 'error',
+        '@angular-eslint/no-inputs-metadata-property': 'error',
+        '@angular-eslint/no-output-native': 'error',
+        '@angular-eslint/no-output-on-prefix': 'error',
+        '@angular-eslint/no-output-rename': 'error',
+        '@angular-eslint/no-outputs-metadata-property': 'error',
+        '@angular-eslint/use-lifecycle-interface': 'error',
+        '@angular-eslint/use-pipe-transform-interface': 'error',
         'no-alert': 'error',
         'no-restricted-imports': [
             'error',
