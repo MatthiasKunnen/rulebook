@@ -21,6 +21,7 @@
         "@matthiaskunnen/eslint-config-typescript": "^3.0.0"
     },
     "files": [
-        "index.js"
+        "index.js",
+        "templates.js"
     ]
 }
