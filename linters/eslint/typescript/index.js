@@ -232,6 +232,7 @@ module.exports = {
         'comma-dangle': 'off', // Would fight with TS rule
         'comma-spacing': 'off', // Would fight with TS rule
         'func-call-spacing': 'off', // Would fight with TS rule
+        'getter-return': 'off', // TS already enforces this
         'indent': 'off', // Would fight with TS rule
         'keyword-spacing': 'off', // Would fight with TS rule
         'no-confusing-arrow': 'off', // With types this should be clear enough
