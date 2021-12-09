@@ -11,7 +11,7 @@ There are a few configurations available:
  - typescript-node
 
 ## Getting started
-Install the preset, e.g. `yarn add @matthiaskunnen/eslint-config-typescript-node`.
+Install the preset, e.g. `yarn add -D @matthiaskunnen/eslint-config-typescript-node`.
 
 ## ESLint config example for Node
 This example node project has both js and ts files. To lint both, we create the following
