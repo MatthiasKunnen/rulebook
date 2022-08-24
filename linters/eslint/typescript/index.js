@@ -21,6 +21,9 @@ module.exports = {
     },
     extends: [
         '@matthiaskunnen/eslint-config-base',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:@typescript-eslint/strict',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -59,6 +62,7 @@ module.exports = {
             },
         ],
         '@typescript-eslint/consistent-type-definitions': 'error',
+        '@typescript-eslint/consistent-type-exports': 'error',
         '@typescript-eslint/explicit-member-accessibility': [
             'error',
             {
@@ -144,10 +148,10 @@ module.exports = {
             {format: null, selector: 'typeProperty'},
         ],
         '@typescript-eslint/no-confusing-void-expression': 'error',
-        // '@typescript-eslint/no-duplicate-imports': 'error', Waiting on https://github.com/eslint/eslint/issues/12758
         '@typescript-eslint/no-empty-function': 'error',
         '@typescript-eslint/no-empty-interface': 'error',
-        '@typescript-eslint/no-extra-non-null-assertion': 'off',
+        '@typescript-eslint/no-explicit-any': 'off', // Maybe later
+        '@typescript-eslint/no-extra-non-null-assertion': 'error',
         '@typescript-eslint/no-extra-parens': [
             'error',
             'all',
@@ -155,16 +159,26 @@ module.exports = {
                 nestedBinaryExpressions: false,
             },
         ],
+        '@typescript-eslint/no-extraneous-class': 'off', // Maybe later
         '@typescript-eslint/no-floating-promises': 'error',
         '@typescript-eslint/no-for-in-array': 'error',
+        '@typescript-eslint/no-meaningless-void-operator': 'error',
         '@typescript-eslint/no-misused-new': 'error',
+        '@typescript-eslint/no-misused-promises': 'error',
         '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
+        '@typescript-eslint/no-non-null-assertion': 'off',
         '@typescript-eslint/no-redeclare': 'error',
         '@typescript-eslint/no-shadow': 'error',
         '@typescript-eslint/no-this-alias': 'error',
         '@typescript-eslint/no-throw-literal': 'error',
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+        '@typescript-eslint/no-unsafe-argument': 'off', // Maybe later
+        '@typescript-eslint/no-unsafe-assignment': 'off', // Maybe later
+        '@typescript-eslint/no-unsafe-call': 'error',
+        '@typescript-eslint/no-unsafe-member-access': 'off', // Maybe later
+        '@typescript-eslint/no-unsafe-return': 'off', // Maybe later
         '@typescript-eslint/no-unused-expressions': 'error',
         '@typescript-eslint/no-use-before-define': [
             'error',
@@ -182,7 +196,9 @@ module.exports = {
         '@typescript-eslint/prefer-enum-initializers': 'error',
         '@typescript-eslint/prefer-for-of': 'error',
         '@typescript-eslint/prefer-function-type': 'error',
+        '@typescript-eslint/prefer-includes': 'error',
         '@typescript-eslint/prefer-namespace-keyword': 'error',
+        '@typescript-eslint/prefer-return-this-type': 'error',
         '@typescript-eslint/promise-function-async': 'error',
         '@typescript-eslint/quotes': [
             'error',
@@ -191,8 +207,12 @@ module.exports = {
                 allowTemplateLiterals: true,
             },
         ],
+        // Fights with @typescript-eslint/promise-function-async Perhaps handy as warning only
+        '@typescript-eslint/require-await': 'off',
         '@typescript-eslint/restrict-plus-operands': 'off',
+        '@typescript-eslint/restrict-template-expressions': 'off',
         '@typescript-eslint/semi': ['error', 'always'],
+        '@typescript-eslint/space-before-blocks': 'error',
         '@typescript-eslint/space-before-function-paren': [
             'error',
             {
@@ -251,6 +271,7 @@ module.exports = {
         'quotes': 'off', // Would fight with TS rule
         'require-await': 'off', // Fights with @typescript-eslint/promise-function-async
         'semi': 'off', // Would fight with TS rule
+        'space-before-blocks': 'off', // Would fight with TS rule
         'space-before-function-paren': 'off', // Would fight with TS rule
         'space-infix-ops': 'off', // Would fight with TS rule
     },

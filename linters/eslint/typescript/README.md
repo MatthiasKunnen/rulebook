@@ -4,3 +4,8 @@
 # Typescript Eslint Configuration
 This configuration is intended for Typescript projects and serves as the base of
 other configuration.
+
+
+## Rules under consideration
+- [`@typescript-eslint/padding-line-between-statements`](https://typescript-eslint.io/rules/padding-line-between-statements/)
+- [`@typescript-eslint/prefer-readonly-parameter-types`](https://typescript-eslint.io/rules/prefer-readonly-parameter-types/)
