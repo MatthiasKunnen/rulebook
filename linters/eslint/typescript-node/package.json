@@ -1,6 +1,6 @@
 {
     "name": "@matthiaskunnen/eslint-config-typescript-node",
-    "version": "3.0.0",
+    "version": "4.0.0",
     "description": "Eslint config for Node + TypeScript projects",
     "keywords": [
         "eslint",
@@ -16,7 +16,7 @@
     "license": "LGPL-3.0",
     "private": false,
     "dependencies": {
-        "@matthiaskunnen/eslint-config-typescript": "^3.0.0"
+        "@matthiaskunnen/eslint-config-typescript": "^4.0.0"
     },
     "files": [
         "index.js"
