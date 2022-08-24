@@ -16,7 +16,7 @@
     "license": "LGPL-3.0",
     "private": false,
     "dependencies": {
-        "eslint": "~7.21.0",
+        "eslint": "~8.22.0",
         "eslint-plugin-import": "^2.22.1",
         "eslint-plugin-unicorn": "^28.0.2"
     },
