@@ -17,8 +17,8 @@
     "private": false,
     "dependencies": {
         "eslint": "~8.22.0",
-        "eslint-plugin-import": "^2.22.1",
-        "eslint-plugin-unicorn": "^28.0.2"
+        "eslint-plugin-import": "^2.25.0",
+        "eslint-plugin-unicorn": "^41.0.0"
     },
     "files": [
         "index.js"
