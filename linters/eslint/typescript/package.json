@@ -1,6 +1,6 @@
 {
     "name": "@matthiaskunnen/eslint-config-typescript",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "description": "Eslint config for TypeScript projects",
     "keywords": [
         "eslint",
@@ -19,7 +19,7 @@
         "test": "node check-typescript-rules.js"
     },
     "dependencies": {
-        "@matthiaskunnen/eslint-config-base": "^3.0.0",
+        "@matthiaskunnen/eslint-config-base": "^3.0.1",
         "@typescript-eslint/eslint-plugin": "5.33.0",
         "@typescript-eslint/eslint-plugin-tslint": "5.33.0",
         "@typescript-eslint/parser": "5.33.0",
