@@ -86,7 +86,14 @@ module.exports = {
             },
         ],
         'keyword-spacing': 'error',
-        'max-len': ['error', 100],
+        'max-len': ['error', {
+            code: 100,
+            // Allow long URLs in comments, allowed:
+            //  * <https://github.com/very-long>
+            //     // <https://github.com/very-long>
+            //  * ](https://github.com/very-long)
+            ignorePattern: '^( \\* <.*>)|([\\t ]*\\/\\/ ?<.*>)|( \\* \\]\\(.*\\))$',
+        }],
         'max-statements-per-line': ['error', {max: 1}],
         'multiline-ternary': ['error', 'always-multiline'],
         'new-parens': 'error',
