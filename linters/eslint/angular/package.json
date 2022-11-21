@@ -1,6 +1,6 @@
 {
     "name": "@matthiaskunnen/eslint-config-angular",
-    "version": "14.0.0-alpha.0",
+    "version": "14.0.0",
     "description": "Eslint config for Angular",
     "keywords": [
         "eslint",
