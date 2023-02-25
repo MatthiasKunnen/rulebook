@@ -20,13 +20,13 @@
     },
     "dependencies": {
         "@matthiaskunnen/eslint-config-base": "^3.0.1",
-        "@typescript-eslint/eslint-plugin": "~5.37.0",
-        "@typescript-eslint/eslint-plugin-tslint": "~5.37.0",
-        "@typescript-eslint/parser": "~5.37.0",
+        "@typescript-eslint/eslint-plugin": "~5.53.0",
+        "@typescript-eslint/eslint-plugin-tslint": "~5.53.0",
+        "@typescript-eslint/parser": "~5.53.0",
         "tslint": "^6.1.2"
     },
     "devDependencies": {
-        "typescript": "^4.7.4"
+        "typescript": "^4.9.5"
     },
     "files": [
         "index.js"

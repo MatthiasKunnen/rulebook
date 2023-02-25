@@ -96,6 +96,7 @@ module.exports = {
         //         SwitchCase: 1,
         //     },
         // ],
+        '@typescript-eslint/key-spacing': 'error',
         '@typescript-eslint/keyword-spacing': 'error',
         '@typescript-eslint/member-delimiter-style': [
             'error',
@@ -254,6 +255,7 @@ module.exports = {
         'func-call-spacing': 'off', // Would fight with TS rule
         'getter-return': 'off', // TS already enforces this
         'indent': 'off', // Would fight with TS rule
+        'key-spacing': 'off', // Would fight with TS rule
         'keyword-spacing': 'off', // Would fight with TS rule
         'no-confusing-arrow': 'off', // With types this should be clear enough
         'no-dupe-class-members': 'off', // The rule errors on method overloads and TypeScript already disallows dupes
