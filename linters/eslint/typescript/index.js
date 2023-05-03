@@ -182,6 +182,18 @@ module.exports = {
         '@typescript-eslint/no-unsafe-member-access': 'off', // Maybe later
         '@typescript-eslint/no-unsafe-return': 'off', // Maybe later
         '@typescript-eslint/no-unused-expressions': 'error',
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            {
+                // Allow unused function arguments. The reason is twofold:
+                // - Sometimes, you make a function that takes a parameter that will be used in the
+                //   future
+                // - Sometimes, the type of function is determined based on its amount of
+                //   parameters. E.g. Express requires the 4th (next) parameter to be present to
+                //   recognize an error handler.
+                args: 'none',
+            },
+        ],
         '@typescript-eslint/no-use-before-define': [
             'error',
             {
