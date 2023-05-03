@@ -34,13 +34,6 @@ module.exports = {
                 type: 'attribute',
             },
         ],
-        '@angular-eslint/eqeqeq': [
-            'error',
-            'always',
-            {
-                null: 'ignore',
-            },
-        ],
         '@angular-eslint/no-conflicting-lifecycle': 'error',
         '@angular-eslint/no-host-metadata-property': 'error',
         '@angular-eslint/no-input-rename': 'error',
