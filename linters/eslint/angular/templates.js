@@ -5,9 +5,8 @@ module.exports = {
         '@angular-eslint/template/banana-in-box': 'error',
         '@angular-eslint/template/eqeqeq': [
             'error',
-            'always',
             {
-                null: 'ignore',
+                allowNullOrUndefined: true,
             },
         ],
         '@angular-eslint/template/no-negated-async': 'error',
