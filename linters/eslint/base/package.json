@@ -16,9 +16,14 @@
     "license": "LGPL-3.0",
     "private": false,
     "dependencies": {
-        "eslint": "~8.39.0",
         "eslint-plugin-import": "~2.26.0",
         "eslint-plugin-unicorn": "^41.0.0"
+    },
+    "peerDependencies": {
+        "eslint": "^8.39.0"
+    },
+    "devDependencies": {
+        "eslint": "~8.39.0"
     },
     "files": [
         "index.js"
