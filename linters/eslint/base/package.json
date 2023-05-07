@@ -15,6 +15,10 @@
     },
     "license": "LGPL-3.0",
     "private": false,
+    "scripts": {
+        "prepublish": "yarn run test",
+        "test": "eslint --no-eslintrc -c index.js \"config-check/*\""
+    },
     "dependencies": {
         "eslint-plugin-import": "~2.26.0",
         "eslint-plugin-unicorn": "^41.0.0"
