@@ -14,7 +14,6 @@
         "url": "github:MatthiasKunnen/rulebook"
     },
     "license": "LGPL-3.0",
-    "private": false,
     "dependencies": {
         "@matthiaskunnen/eslint-config-typescript": "^4.0.0"
     },

@@ -1,21 +1,9 @@
-const fs = require('fs');
-const path = require('path');
+const {rules} = require('@typescript-eslint/eslint-plugin');
 
 const baseConfig = require('../base/index');
 const typeScriptConfig = require('./index');
 
-const typeScriptRulesPath = path.join(
-    __dirname,
-    'node_modules',
-    '@typescript-eslint',
-    'eslint-plugin',
-    'dist',
-    'rules',
-);
-
-const typeScriptRules = new Set(fs.readdirSync(typeScriptRulesPath)
-    .filter(rule => path.extname(rule) === '.js')
-    .map(rule => path.basename(rule, path.extname(rule))));
+const typeScriptRules = new Set(Object.keys(rules));
 
 const output = {
     baseNotTurnedOff: [],

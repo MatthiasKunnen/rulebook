@@ -14,7 +14,6 @@
         "url": "github:MatthiasKunnen/rulebook"
     },
     "license": "LGPL-3.0",
-    "private": false,
     "scripts": {
         "prepublish": "yarn run test",
         "test": "eslint --no-eslintrc -c index.js \"config-check/*\""
