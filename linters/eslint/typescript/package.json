@@ -16,7 +16,10 @@
     "license": "LGPL-3.0",
     "scripts": {
         "lint:play": "cd play && eslint test.ts",
-        "test": "node check-typescript-rules.js"
+        "prepublish": "yarn run test",
+        "test": "yarn run test:config && yarn run test:ts-rules",
+        "test:config": "cd config-check && eslint empty.ts",
+        "test:ts-rules": "node check-typescript-rules.js"
     },
     "dependencies": {
         "@matthiaskunnen/eslint-config-base": "^3.0.1",
