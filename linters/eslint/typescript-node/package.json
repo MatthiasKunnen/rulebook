@@ -15,7 +15,7 @@
     },
     "license": "LGPL-3.0",
     "dependencies": {
-        "@matthiaskunnen/eslint-config-typescript": "^4.0.0"
+        "@matthiaskunnen/eslint-config-typescript": "workspace:^"
     },
     "files": [
         "index.js"

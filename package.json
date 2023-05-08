@@ -7,7 +7,8 @@
         "lint:linters:base": "eslint -c linters/eslint/.eslintrc.yaml"
     },
     "devDependencies": {
-        "@matthiaskunnen/eslint-config-base": "^1.0.0",
+        "@matthiaskunnen/eslint-config-base": "workspace:^",
+        "eslint": "~8.39.0",
         "husky": "^4.2.5",
         "lint-staged": "^10.2.2"
     },
