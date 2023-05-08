@@ -266,7 +266,7 @@ module.exports = {
         'prefer-arrow-callback': 'error',
         'prefer-const': 'error',
         'prefer-exponentiation-operator': 'error',
-        'prefer-named-capture-group': 'error',
+        'prefer-named-capture-group': 'off',
         'prefer-object-has-own': 'error',
         'prefer-object-spread': 'error',
         'prefer-promise-reject-errors': 'error',
