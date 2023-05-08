@@ -4,8 +4,7 @@
     "description": "A collection of configs and information that I regularly use",
     "scripts": {
         "lint:linters": "yarn run lint:linters:base linters/eslint/*/*.js",
-        "lint:linters:base": "eslint -c linters/eslint/.eslintrc.yaml",
-        "test": "yarn --cwd ./linters/eslint/typescript run test"
+        "lint:linters:base": "eslint -c linters/eslint/.eslintrc.yaml"
     },
     "devDependencies": {
         "@matthiaskunnen/eslint-config-base": "^1.0.0",
@@ -25,6 +24,8 @@
         "linters/eslint/*"
     ],
     "husky": {
-        "hooks": {}
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
     }
 }

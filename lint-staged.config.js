@@ -3,8 +3,10 @@ function mapFilenames(filenames) {
 }
 
 module.exports = {
-    'linters/eslint/**': `yarn run test`,
-    'linters/eslint/**/*.js': (filenames) => [
+    'linters/eslint/**': () => [
+        `yarn workspaces foreach --include '@matthiaskunnen/eslint-*' -p run test`
+    ],
+    'linters/eslint/*/*.js': (filenames) => [
         `yarn run lint:linters:base --fix --cache ${mapFilenames(filenames)}`,
     ],
 };
