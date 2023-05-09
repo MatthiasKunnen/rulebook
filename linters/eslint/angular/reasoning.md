@@ -1,6 +1,12 @@
 # Reasoning
 Explains the reasoning behind certain decisions.
 
+## Angular TypeScript rules
+
+### `@angular-eslint/sort-ngmodule-metadata-arrays`
+No, order can matter. The rules will be replaced, see <https://github.com/angular-eslint/angular-eslint/issues/1232>.
+
+
 ## Angular template rules
 
 ### `@angular-eslint/template/button-has-type: error`
