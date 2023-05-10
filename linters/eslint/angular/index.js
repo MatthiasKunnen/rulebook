@@ -48,7 +48,7 @@ module.exports = {
         '@angular-eslint/prefer-output-readonly': 'error',
         '@angular-eslint/relative-url-prefix': 'error',
         '@angular-eslint/sort-ngmodule-metadata-arrays': 'off',
-        '@angular-eslint/use-injectable-provided-in': 'error',
+        '@angular-eslint/use-injectable-provided-in': 'off',
         '@angular-eslint/use-lifecycle-interface': 'error',
         '@angular-eslint/use-pipe-transform-interface': 'error',
         '@typescript-eslint/no-restricted-imports': [
