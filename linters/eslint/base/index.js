@@ -96,7 +96,7 @@ module.exports = {
             //  * <https://github.com/very-long>
             //     // <https://github.com/very-long>
             //  * ](https://github.com/very-long)
-            ignorePattern: '^( \\* <.*>)|([\\t ]*\\/\\/ ?<.*>)|( \\* \\]\\(.*\\))$',
+            ignorePattern: '^[\\t ]*(\\* <.*>)|(\\/\\/ ?<.*>)|(\\* \\]\\(.*\\))$',
         }],
         'max-statements-per-line': ['error', {max: 1}],
         'multiline-ternary': ['error', 'always-multiline'],
