@@ -169,7 +169,7 @@ module.exports = {
         'no-obj-calls': 'error',
         'no-octal': 'error',
         'no-octal-escape': 'error',
-        'no-param-reassign': 'error',
+        'no-param-reassign': 'off',
         'no-promise-executor-return': 'error',
         'no-proto': 'error',
         'no-prototype-builtins': 'error',

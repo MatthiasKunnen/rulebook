@@ -11,3 +11,6 @@ Yes, can be handy in JavaScript when forgetting a return. Do not use in TypeScri
 
 ### [`no-new-symbol`](https://eslint.org/docs/latest/rules/no-new-symbol)
 No, implemented in [`no-new-native-nonconstructor`](https://eslint.org/docs/latest/rules/no-new-native-nonconstructor).
+
+### [`no-param-reassign`](https://eslint.org/docs/latest/rules/no-param-reassign)
+No, required for things like `Array.reduce`.
